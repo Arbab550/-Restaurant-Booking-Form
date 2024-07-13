@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbab's Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+</head>
+<body class="dark-mode">
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#home"><img src="images/logo1.jpg" alt="Restaurant Logo" class="logo"></a>
+                <ul class="nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <img src="images/sun.jpeg" id="toggle-theme" alt="Toggle Theme" class="toggle-button">
+            </div>
+        </nav>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to our restaurant. We offer a fine dining experience with a variety of gourmet dishes made from fresh, locally sourced ingredients. Our chefs are dedicated to providing an unforgettable culinary experience.</p>
+            <img src="images/Restaurant.jpeg" alt="Restaurant Image">
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <p>Explore our delicious menu with a range of dishes to suit every taste. From appetizers to desserts, we have something for everyone.</p>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Grilled Salmon</h3>
+                    <p>Fresh salmon fillet grilled to perfection, served with lemon butter sauce.</p>
+                    <span class="price">500.00</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Caesar Salad</h3>
+                    <p>Crisp romaine lettuce, homemade croutons, and Caesar dressing topped with Parmesan.</p>
+                    <span class="price">600.00</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Margherita Pizza</h3>
+                    <p>Classic pizza topped with fresh mozzarella, tomatoes, and basil.</p>
+                    <span class="price">800.00</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Beef Tenderloin</h3>
+                    <p>Juicy beef tenderloin cooked to your liking, served with seasonal vegetables.</p>
+                    <span class="price">400.00</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Chocolate Mousse</h3>
+                    <p>Rich and creamy chocolate mousse topped with whipped cream.</p>
+                    <span class="price">450.00</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>Classic Italian pasta dish with creamy sauce, bacon, and cheese.</p>
+                    <span class="price">550.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <h2>Make a Reservation</h2>
+            <form id="reservationForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Reservation Date:</label>
+                    <input type="text" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Reservation Time:</label>
+                    <select id="time" required>
+                        <option value="">Select Time</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="13:00">1:00 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="18:00">6:00 PM</option>
+                        <option value="19:00">7:00 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="specialRequests">Special Requests:</label>
+                    <textarea id="specialRequests" rows="4"></textarea>
+                </div>
+                <button type="submit">Reserve Table</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out to us with any questions or to make a reservation over the phone.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Restaurant Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
